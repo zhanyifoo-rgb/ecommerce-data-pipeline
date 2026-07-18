@@ -90,12 +90,11 @@ cp .env.example .env
 
 Update the values in .env as needed.
 
-Build the Docker images
-docker compose build
-Initialize Airflow
-docker compose up airflow-init
-Start the project
-docker compose up -d
+Start Docker desktop
+
+Build the Docker custom images: docker compose build
+Initialize Airflow: docker compose up airflow-init
+Start the project: docker compose up -d
 Access Airflow
 
 Open:
