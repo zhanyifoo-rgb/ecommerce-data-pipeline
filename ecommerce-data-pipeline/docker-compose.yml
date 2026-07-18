@@ -90,6 +90,7 @@ x-airflow-common:
     - ./plugins:/opt/airflow/plugins
     - ./scripts:/opt/airflow/scripts
     - ./data:/opt/airflow/data
+    - ./sql:/opt/airflow/sql
   user: "${AIRFLOW_UID:-50000}:0"
 
   networks:

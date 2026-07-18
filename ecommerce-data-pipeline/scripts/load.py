@@ -1,5 +1,5 @@
 import pandas as pd
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, text
 import os
 
 def load():
@@ -18,7 +18,7 @@ def load():
     df.to_sql(
         "sales",
         engine,
-        if_exists="replace",
+        if_exists="append",
         index=False
     )
 

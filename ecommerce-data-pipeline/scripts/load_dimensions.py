@@ -57,7 +57,7 @@ def to_sql(TableName,dataframe):
         dataframe.to_sql(
         TableName,
         engine,
-        if_exists="replace",
+        if_exists="append",
         index=False
         )
         print(f"{TableName} loaded")
