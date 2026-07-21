@@ -117,6 +117,13 @@ http://localhost:8080
 
 Login using the credentials configured in your .env file.
 
+Postgres
+Docker services:
+PostgreSQL container: ecommerce-postgres:5432
+
+External access:
+localhost:5433
+
 Skills Demonstrated
 Data Engineering
 ETL Pipeline Development
