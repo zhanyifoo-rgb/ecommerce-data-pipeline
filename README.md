@@ -40,6 +40,20 @@ Architecture
                         │
                         ▼
           Apache Airflow DAG Orchestration
+
+                    dim_customer
+                    dim_product
+                    factsales
+                    
+                        │
+                        ▼
+                    
+                    SQL Analytical Views
+                    
+                        │
+                        ▼
+                    
+                    Dashboard
           
 Project Structure
 ecommerce-data-pipeline/
