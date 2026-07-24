@@ -137,10 +137,11 @@ services:
       POSTGRES_DB: ${ECOMMERCE_POSTGRES_DB}
 
     ports:
-      - "5432:5432"
+      - "5433:5432"
 
     volumes:
       - ecommerce-postgres-data:/var/lib/postgresql/data
+      - ./sql:/sql
 
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "postgres"]
